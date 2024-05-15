@@ -1,0 +1,405 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.body{
+    height: 20000000px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/* --------------------home and navbar style---------------------------- */
+.home{
+    background-color: brown;
+    
+    background-image: url("../images/hero\ img.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.home .overlay{
+    background-color: rgba(0, 0, 0, .7);
+    height: 100%;
+    display: flow-root;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+   background-color: #222;
+   position: fixed;
+  width: 100%;
+z-index: 999;
+display: flow-root;
+
+}
+.nav .container{
+  width: 80%;
+    margin-block: 10px;
+}
+.nav ul a:hover{
+    color: red;
+}
+
+.nav h2{
+    color: #FF243A;
+    font-size: 24px;
+    float: left;
+    
+}
+.nav ul{
+  margin-left: 700px;
+  margin-top: 5px;
+}
+.nav ul li{
+    color: aliceblue;
+    font-size: 16px;
+   float: left;
+    margin-inline:10px;
+    list-style: none;
+    /* margin-left: 100px; */
+}
+
+.sec1 .container{
+   
+    width: fit-content;
+    margin-inline: auto;
+   
+    font-family: sans-serif;
+margin-top: 300px;
+
+}
+.container h3{
+    color: aliceblue;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    margin-block:30px;
+}
+.container h1{
+    color: #FF305B;
+    font-weight: 700;
+    font-size: 77px;
+    margin-block:30px;
+
+}
+/* &-----------------------------about styl------------------- */
+.about{
+   
+  height: 100vh;
+display: flow-root;}
+ .about  .container{
+    
+    width: 80%;
+    display: flow-root;
+    margin-top: 100px;
+ }
+ .about .container .img{
+  
+    width: 40%;
+    float: left;
+    margin-right: 70px;
+ }
+ .about .container .content{
+    
+    float: left;
+    width: 50%;
+    
+ }
+ .about .container .img .border{
+    border: 5px solid #555555;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+ }
+ .about .container .img .border .img-border{
+    position: relative;
+    width: 100%;
+    top: 15px;
+    left: 15px;
+    border-radius: 10px;
+
+overflow: hidden; 
+
+}
+    .about .container .img .border .img-border img{
+        border-radius: 10px;
+    }
+    .about .container .img .border .img-border .layer{
+        background-color: #686868;
+        opacity: .5;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        bottom: -500px;
+        position: absolute;
+     
+        transition: bottom 2s;
+    }
+
+    .about .container .img .border .img-border:hover .layer{
+        bottom: 0;
+
+       
+    }
+    .about .container .img .border .img-border .layer i{
+        color: white;
+        position: relative;
+        top: 50%;
+      left: 30%;
+    font-size: 20px;
+    margin-right: 10px;
+    }
+    .about .container .img .border .img-border .layer i:hover{
+        color: #FF305B;
+    }
+    @media screen and (max-width :800px) {
+        .about .container .img,
+        .about .container .content{
+            width: 100%;
+        } 
+        .about .container .img .border{
+            border: none;}
+    }
+    .about .container .content h2{
+position: relative;
+font-size: 34px;
+line-height: 2;
+    }
+    .about .container .content h2::first-letter{
+       
+        color: red;
+    
+       
+    }
+    .about .container .content p{
+        font-size: 16px;
+        font-weight: 400;
+        color:#555555;
+        line-height: 1.5;
+    }
+    .table ul {
+        display: inline-block;
+        margin-right: 100px;
+        list-style: none;
+    }
+    .table ul li{
+        line-height: 2;
+    }
+   .about .container .content button{
+        display: inline-block;
+       border: none;
+        margin:20px;
+        padding-inline: 30px;
+        padding-block: 15px;
+        background-color:#FF305B;
+        border-radius: 10px;
+       
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .about .container .content button:hover{
+        background-color: #F61201;
+    }
+    .about .container .content button a{
+        color: white;
+    }
+    .about .container .content button  i{
+        color: white;
+    }
+    /* ========serves======= */
+    .serves .container{
+        background-color: #F1F1F1;
+        height: 500px;
+        width: 100%;
+        padding: 50px;
+    }
+    .serves .container h2{
+        width: fit-content;
+        margin: auto;
+        font-size: 40px;
+        font-weight: 800;
+        position: relative;
+    }
+    .serves .container h2::before{
+        content: " ";
+        transform: translateX(40px);
+        width: 50%;
+        height: 1px;
+        background-color: red;
+        position: absolute;
+        top: 60px;
+
+    }
+    .serves .container .brdr{
+width: 150px;
+height: 1px;
+background-color: red;
+margin: auto;
+    }
+    .serves .container h2::after{
+        content: " ";
+        width: 50%;
+        height: 1px;
+        background-color: red;
+        position: absolute;
+        top:65px;
+        transform: translatex(-250px);
+
+    }
+    .serves .container h2::before{
+        content: " ";
+        transform: translateX(70px);
+        width: 50%;
+        height: 1px;
+        background-color: red;
+        position: absolute;
+        top: 70px;
+
+    }
+    .serves .container .cards{
+       
+        width: 80%;
+        margin: auto;
+        display: flow-root;
+        margin-block: 100px;
+    }
+    .serves .container .cards .card1,.card2,.card3,.card4{
+        padding: 20px;
+        width: 25%;
+        height: 250px;
+
+        float: left;
+        padding-inline: 20px;
+    }
+    .serves .container  i{
+        color: red;
+        font-size: 24px;
+       margin-left: 100px;
+       
+    }
+    .serves .container h3{
+        color: #000;
+        font-size: 24px;
+        font-weight: 600px;
+       
+        margin-block: 20px;
+        margin-right: 20px;
+    }
+    .serves .container p{
+        line-height: 1.7;
+        color:#555555;
+    }
+    .serves .container .cards .card1:hover{
+        background-color: white;
+    }
+    .serves .container .cards .card2:hover{
+        background-color: white;
+    }
+    .serves .container .cards .card3:hover{
+        background-color: white;
+    }
+    .serves .container .cards .card4:hover{
+        background-color: white;
+    }
+    /* ------------------ */
+    .portfolio{
+        height: fit-content;
+       margin-top: 30px;
+    }
+    .portfolio .container{
+        width: 80;
+        text-align: center;
+      
+        height: fit-content;
+    }
+    .portfolio h2{
+        width: fit-content;
+        margin: auto;
+        font-size: 40px;
+        font-weight: 800;
+    }
+.portfolio .br{
+    width: 50px;
+    height: 1px;
+   
+ 
+    margin: auto;
+    margin-block: 5px;
+}
+.portfolio .med{
+    width: 100px;
+}
+.portfolio ul{
+    list-style: none;
+    width: 50%;
+  
+display: flow-root;
+margin: auto;
+}
+.portfolio ul li{
+float: left;
+
+margin-inline: 10px;
+margin-left: 50px;
+
+
+}
+.portfolio ul li a{
+    text-decoration: none;
+    color: #555555;
+    text-align: center;}
+    .portfolio .product{
+        margin-top: 50px;
+    }
+    .portfolio .product{
+        display: flow-root;
+        margin-left: 30px;
+      
+    }
+    .portfolio .product .watch{
+        width: 32%;
+        float: left;
+        position: relative;
+        padding: 10px;
+    }
+.portfolio .product .watch img{
+    width: 100%;
+}
+.portfolio .product .watch .layer{
+    width: 100%;
+    
+    opacity: 0;
+    background-color: #776c6c;
+    position: absolute;
+    inset: 0;
+    transition:all 1s;
+    
+}
+.portfolio .product .watch:hover .layer{
+    opacity: .5;
+
+}
+.portfolio .product .watch .layer i{
+   
+    color: #750c04;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+/* ==============================client */
+.client{
+    width: 500px;
+   
+    background-color: #776c6c;
+}
+.client .part{
+    width: 100px;
+    background-color: #F61201;
+}
